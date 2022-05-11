@@ -8,7 +8,6 @@ import "./assets/tailwind.css"
 // FormKit
 import { plugin, defaultConfig, FormKit } from "@formkit/vue"
 import { generateClasses } from "@formkit/themes"
-import formKitTailwindPlugin from "@formkit/themes/tailwindcss"
 import theme from "@/assets/formkitTheme"
 app.use(
   plugin,
