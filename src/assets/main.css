@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v121/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+    format("woff2");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Tailwind styles for FormKit */
+
+.formkit-actions {
+  @apply !mt-0;
+}
+
+.formkit-actions .formkit-outer {
+  @apply !mb-0;
+}
+
+.formkit-form > .formkit-messages {
+  @apply -mt-2 !pt-0;
+}
+
+.formkit-option .formkit-decorator {
+  @apply !-mt-1;
+}
+
+.formkit-outer {
+  * {
+    @apply !font-sans;
+  }
+
+  button,
+  input {
+    @apply !rounded-md;
+  }
+
+  button[data-loading] {
+    @apply pointer-events-none animate-pulse bg-neutral-500;
+  }
+}
+
+:root {
+  --fk-color-primary: rgb(22 163 74);
+  --fk-bg-decorator: none;
+  --fk-font-weight-label: 500;
+}
